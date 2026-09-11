@@ -1,0 +1,12 @@
+app:
+  name: express-sample
+
+image:
+  repository: express-sample
+  tag: "1.0"
+
+replicaCount: 1
+hpa:
+  replica: 
+    min: 1
+    max: 5
