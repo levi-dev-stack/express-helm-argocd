@@ -2,7 +2,7 @@ app:
   name: express-sample
 
 image:
-  repository: express-sample
+  repository: stackdevnofil/express-sample
   tag: "1.4"
 
 replicaCount: 1
