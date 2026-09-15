@@ -2,12 +2,12 @@ apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 
 metadata:
-  name: express-sample
+  name: {{ .Values.app.name }}
 
 spec:
   selector:
     matchLabels:
-      app: express-sample
+      app: {{ .Values.app.name }}
 
   endpoints:
     - port: http
