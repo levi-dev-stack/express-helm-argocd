@@ -18,3 +18,11 @@ prometheus:
     serviceMonitorSelector:
       matchLabels:
         release: prometheus
+
+dashboard:
+  enabled: true
+  labels:
+    grafana_dashboard: "1"
+  # Set to "monitoring" if your Grafana sidecar only watches the monitoring namespace
+  namespace: ""
+  folder: "Applications"
