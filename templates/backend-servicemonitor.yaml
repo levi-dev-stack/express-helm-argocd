@@ -3,6 +3,7 @@ kind: ServiceMonitor
 
 metadata:
   name: {{ .Values.app.name }}
+  # namespace: monitoring
   labels:
     release: prometheus
 
