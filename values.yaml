@@ -10,3 +10,11 @@ hpa:
   replica: 
     min: 1
     max: 5
+
+prometheus:
+  prometheusSpec:
+    serviceMonitorNamespaceSelector: {}
+
+    serviceMonitorSelector:
+      matchLabels:
+        release: prometheus

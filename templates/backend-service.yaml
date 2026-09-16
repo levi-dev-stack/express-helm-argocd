@@ -3,6 +3,8 @@ kind: Service
 
 metadata:
   name: {{ .Values.app.name }}
+  labels:
+    app: {{ .Values.app.name }}
 
 spec:
   selector:
@@ -13,4 +15,5 @@ spec:
       protocol: TCP
       port: 5000
       targetPort: 5000
+
   type: ClusterIP
